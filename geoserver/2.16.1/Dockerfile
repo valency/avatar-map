@@ -1,7 +1,11 @@
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
 FROM tomcat:9.0-jre11-slim
-MAINTAINER thinkWhere<info@thinkwhere.com>
-#Credit: Tim Sutton<tim@linfiniti.com>
+
+LABEL maintainer="AUTUMN"
+
+# Credit: thinkWhere<info@thinkwhere.com> 
+# thinkWhere/GeoServer-Docker
+# Credit: Tim Sutton<tim@linfiniti.com>
 # kartoza/docker-geoserver
 
 RUN  export DEBIAN_FRONTEND=noninteractive
