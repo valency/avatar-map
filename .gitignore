@@ -6,6 +6,11 @@
 *.otf
 
 # Ignore geoserver data
-# geoserver/geoserver_data/*
-# geoserver/logs/*
+geoserver/geoserver_data/*
+geoserver/logs/*
+
+# Ignore postgis data
+postgis/data/*
+
+!.gitkeep
 
