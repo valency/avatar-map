@@ -33,28 +33,18 @@ services:
       interval: 1m30s
       timeout: 10s
       retries: 3
-  db:
+  postgis:
     image: kartoza/postgis:11.0-2.5
     volumes:
       - ./postgis/data:/var/lib/postgresql
     ports:
-      - "127.0.0.1:8233:5432"
+      - "8232:5432"
     environment:
-      - USERNAME=docker
-      - PASS=docker
+      - USERNAME=avatar
+      - PASS=HcLgFb#KNCGlpg8X
       - ALLOW_IP_RANGE=0.0.0.0/0
     restart: on-failure
     healthcheck:
       test: "exit 0"
-  pgadmin:
-    container_name: pgadmin_container
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: avatar@avatarsys.org
-      PGADMIN_DEFAULT_PASSWORD: HcLgFb#KNCGlpg8X
-    volumes:
-      - pgadmin-data:/var/lib/pgadmin 
-    ports:
-      - "8232:80"
 volumes:
   pgadmin-data:
