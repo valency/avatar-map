@@ -1,4 +1,4 @@
-# Avatar Map Service Usage Guide
+# Avatar: Map Service
 
 ## Installation
 
