@@ -40,11 +40,10 @@ services:
     ports:
       - "8232:5432"
     environment:
-      - USERNAME=avatar
-      - PASS=HcLgFb#KNCGlpg8X
+      - POSTGRES_DBNAME=gis
+      - POSTGRES_USER=avatar
+      - POSTGRES_PASS=HcLgFb#KNCGlpg8X
       - ALLOW_IP_RANGE=0.0.0.0/0
     restart: on-failure
     healthcheck:
       test: "exit 0"
-volumes:
-  pgadmin-data:
