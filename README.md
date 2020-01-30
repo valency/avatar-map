@@ -24,5 +24,7 @@ User name and password are `admin` and `geoserver` by default.
 
 GeoServer tutorial: https://docs.geoserver.org/stable/en/user/gettingstarted/shapefile-quickstart/index.html
 
-PostGIS is available on port `8232` with username `avatar` and `HcLgFb#KNCGlpg8X` by default. GeoServer could use hostname `postgis` to import data.
+The data directory of GeoServer is mapped to: `geoserver/geoserver_data/data/`
+
+PostGIS is available on port `8232` with username `avatar` and `HcLgFb#KNCGlpg8X` by default. GeoServer could use hostname `postgis` and port `5432` to import data.
 
